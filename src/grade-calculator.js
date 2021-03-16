@@ -11,7 +11,7 @@ function calculateLetterGrade(numericGrade) {
 		} else if (numericGrade < 0.6) {
 			return "F";
 		} else {
-			throw new Error("Input should be a number and not null");
+			throw new Error("input must not be null / must be a number");
 		}
 	} catch (e) {
 		console.log(e.message);
